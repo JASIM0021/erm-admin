@@ -55,7 +55,7 @@ const UploadBook = () => {
       .then(response => {
         // Handle successful upload
         alert("Book uploaded successfully")
-        window.location.reload()
+        window.location.replace('/')
         console.log('Book uploaded successfully', response);
         // Optionally, redirect or show a success message
       })
