@@ -45,11 +45,7 @@ const UploadBook = () => {
     }
 
 
-axios.get('http://localhost:3000').then((data)=>{
-  console.log('data.data', data.data)
-}).catch((err)=>{
-  console.log('err', err)
-})
+
 
     axios.post('https://erm-admin-server-l3x2.vercel.app/upload', formData, {
       headers: {
@@ -59,6 +55,7 @@ axios.get('http://localhost:3000').then((data)=>{
       .then(response => {
         // Handle successful upload
         alert("Book uploaded successfully")
+        window.location.reload()
         console.log('Book uploaded successfully', response);
         // Optionally, redirect or show a success message
       })
