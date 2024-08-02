@@ -51,7 +51,7 @@ axios.get('http://localhost:3000').then((data)=>{
   console.log('err', err)
 })
 
-    axios.post('http://localhost:3000/upload', formData, {
+    axios.post('https://erm-admin-server-l3x2.vercel.app/upload', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
